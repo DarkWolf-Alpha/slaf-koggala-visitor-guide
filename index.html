@@ -20,6 +20,7 @@
         }
         .location-hero {
             height: 400px;
+            cursor: pointer;
         }
         .overlay {
             background: rgba(0, 0, 0, 0.5);
@@ -29,37 +30,47 @@
             align-items: center;
             justify-content: center;
         }
+        .hero-section h2 {
+            font-size: 4rem; /* Larger font size */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Improved visibility with shadow */
+        }
     </style>
 </head>
 <body>
     <section class="main-hero hero-section" style="background-image: url('https://www.ministryofvillas.com/wp-content/uploads/2017/10/sri-lanka-koggala-beach.jpg');">
         <div class="overlay">
             <div class="container">
-                <h1 class="display-4">Welcome to Visitors of Sri Lanka Air Force Koggala Station Holiday Homes</h1>
+                <h1 class="display-4">Welcome to Sri Lanka Air Force Koggala Station Holiday Homes</h1>
                 <p class="lead">Nestled 14 km south of Galle, SLAF Koggala Station offers stunning views of the Koggala Lagoon and the sea, with comfortable holiday homes for personnel and guests. This guide helps you explore nearby attractions in Southern Sri Lanka while enjoying your stay at this historic site, rich in WWII heritage and modern recreational facilities.</p>
             </div>
         </div>
     </section>
 
     <section id="koggala" class="container my-5">
-        <div class="location-hero hero-section" style="background-image: url('https://www.ministryofvillas.com/wp-content/uploads/2017/10/sri-lanka-koggala-beach.jpg');">
-            <h2>Koggala</h2>
+        <div class="location-hero hero-section" style="background-image: url('https://www.ministryofvillas.com/wp-content/uploads/2017/10/sri-lanka-koggala-beach.jpg');" data-bs-toggle="collapse" data-bs-target="#koggala-places" aria-expanded="false" aria-controls="koggala-places">
+            <div class="overlay">
+                <h2>Koggala</h2>
+            </div>
         </div>
-        <div class="row mt-4" id="koggala-places"></div>
+        <div class="row mt-4 collapse" id="koggala-places"></div>
     </section>
 
     <section id="galle" class="container my-5">
-        <div class="location-hero hero-section" style="background-image: url('https://thumbs.dreamstime.com/b/view-fort-galle-lighthouse-sri-lanka-sunset-beautiful-travel-vacation-theme-294602992.jpg');">
-            <h2>Galle</h2>
+        <div class="location-hero hero-section" style="background-image: url('https://thumbs.dreamstime.com/b/view-fort-galle-lighthouse-sri-lanka-sunset-beautiful-travel-vacation-theme-294602992.jpg');" data-bs-toggle="collapse" data-bs-target="#galle-places" aria-expanded="false" aria-controls="galle-places">
+            <div class="overlay">
+                <h2>Galle</h2>
+            </div>
         </div>
-        <div class="row mt-4" id="galle-places"></div>
+        <div class="row mt-4 collapse" id="galle-places"></div>
     </section>
 
     <section id="matara" class="container my-5">
-        <div class="location-hero hero-section" style="background-image: url('https://www.srilankaclassytours.com/medias/place/big/583/thumb.jpg');">
-            <h2>Matara</h2>
+        <div class="location-hero hero-section" style="background-image: url('https://www.srilankaclassytours.com/medias/place/big/583/thumb.jpg');" data-bs-toggle="collapse" data-bs-target="#matara-places" aria-expanded="false" aria-controls="matara-places">
+            <div class="overlay">
+                <h2>Matara</h2>
+            </div>
         </div>
-        <div class="row mt-4" id="matara-places"></div>
+        <div class="row mt-4 collapse" id="matara-places"></div>
     </section>
 
     <script src="places.js"></script>
