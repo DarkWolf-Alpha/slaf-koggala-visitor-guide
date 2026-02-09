@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SLAF Koggala | Visitor Guide</title>
+
+  <!-- Tailwind CDN (free) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    /* Small premium touches */
+    .glass { background: rgba(255,255,255,.08); backdrop-filter: blur(10px); }
+    .shadow-soft { box-shadow: 0 20px 60px rgba(0,0,0,.25); }
+  </style>
+</head>
+
+<body class="min-h-screen bg-slate-950 text-slate-100">
+  <!-- Header -->
+  <header class="px-5 pt-8 pb-5 max-w-6xl mx-auto">
+    <div class="flex items-start justify-between gap-4">
+      <div>
+        <p class="text-xs tracking-widest text-slate-300/80">SLAF STATION KOGGALA</p>
+        <h1 class="text-2xl sm:text-3xl font-semibold mt-1">Visitor Guide</h1>
+        <p class="text-slate-300/80 mt-2 max-w-2xl">
+          Tap an area to explore recommended places, photos, things to do, and distance from SLAF Koggala.
+        </p>
+      </div>
+      <div class="hidden sm:block text-right text-xs text-slate-300/70">
+        <div class="glass rounded-2xl px-4 py-3 border border-white/10">
+          <div class="font-medium text-slate-100">Quick Tips</div>
+          <div class="mt-1">• Keep valuables secured</div>
+          <div>• Check sea conditions</div>
+          <div>• Respect local customs</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="px-5 pb-10 max-w-6xl mx-auto">
+    <!-- Area selector -->
+    <section id="areaSelector" class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+      <button data-area="Koggala"
+        class="group glass border border-white/10 rounded-2xl p-5 text-left hover:border-white/20 transition shadow-soft">
+        <div class="text-sm text-slate-300/80">Explore</div>
+        <div class="text-xl font-semibold mt-1">Koggala</div>
+        <div class="text-slate-300/80 mt-2">Lake safari, museums, tea estate, beaches</div>
+        <div class="mt-4 text-sm text-slate-200/90 group-hover:translate-x-1 transition">Open →</div>
+      </button>
+
+      <button data-area="Galle"
+        class="group glass border border-white/10 rounded-2xl p-5 text-left hover:border-white/20 transition shadow-soft">
+        <div class="text-sm text-slate-300/80">Explore</div>
+        <div class="text-xl font-semibold mt-1">Galle</div>
+        <div class="text-slate-300/80 mt-2">Fort walk, lighthouse, beaches, viewpoints</div>
+        <div class="mt-4 text-sm text-slate-200/90 group-hover:translate-x-1 transition">Open →</div>
+      </button>
+
+      <button data-area="Matara"
+        class="group glass border border-white/10 rounded-2xl p-5 text-left hover:border-white/20 transition shadow-soft">
+        <div class="text-sm text-slate-300/80">Explore</div>
+        <div class="text-xl font-semibold mt-1">Matara</div>
+        <div class="text-slate-300/80 mt-2">Mirissa, surf bays, temples, lighthouse</div>
+        <div class="mt-4 text-sm text-slate-200/90 group-hover:translate-x-1 transition">Open →</div>
+      </button>
+    </section>
+
+    <!-- Search + chips -->
+    <section id="toolbar" class="mt-7 hidden">
+      <div class="flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between">
+        <div class="flex items-center gap-3">
+          <button id="backBtn" class="px-4 py-2 rounded-xl border border-white/10 glass hover:border-white/20 transition">
+            ← Areas
+          </button>
+          <div>
+            <div class="text-sm text-slate-300/80">Selected area</div>
+            <div id="currentArea" class="text-xl font-semibold"></div>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-3 sm:items-center">
+          <input id="searchInput" placeholder="Search: beach, fort, temple, safari..."
+            class="w-full sm:w-80 px-4 py-2 rounded-xl bg-white/5 border border-white/10 focus:outline-none focus:border-white/20"/>
+          <div class="text-xs text-slate-300/70">Tip: use keywords like “beach”, “museum”, “viewpoint”.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards grid -->
+    <section id="cardsGrid" class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></section>
+
+    <!-- Footer -->
+    <footer class="mt-10 text-xs text-slate-300/60">
+      Public QR guide for SLAF Koggala holiday home occupants. Photos are from public sources with credit shown per location.
+    </footer>
+  </main>
+
+  <!-- Modal -->
+  <div id="modalOverlay" class="fixed inset-0 bg-black/70 hidden items-center justify-center p-4 z-50">
+    <div class="w-full max-w-3xl rounded-2xl border border-white/10 bg-slate-950 shadow-soft overflow-hidden">
+      <div class="flex items-start justify-between gap-4 p-5 border-b border-white/10">
+        <div>
+          <div id="modalTitle" class="text-xl font-semibold"></div>
+          <div id="modalMeta" class="text-sm text-slate-300/80 mt-1"></div>
+        </div>
+        <button id="modalClose" class="px-3 py-2 rounded-xl glass border border-white/10 hover:border-white/20 transition">✕</button>
+      </div>
+
+      <div class="p-5 grid grid-cols-1 lg:grid-cols-2 gap-5">
+        <div>
+          <img id="modalImg" class="w-full h-56 object-cover rounded-2xl border border-white/10" alt="location photo"/>
+          <div id="modalCredit" class="text-xs text-slate-300/60 mt-2"></div>
+        </div>
+
+        <div class="space-y-4">
+          <div>
+            <div class="text-sm text-slate-300/80">About</div>
+            <div id="modalDesc" class="mt-1 text-slate-100/90 leading-relaxed"></div>
+          </div>
+          <div>
+            <div class="text-sm text-slate-300/80">Things to do</div>
+            <ul id="modalThings" class="mt-1 list-disc list-inside text-slate-100/90"></ul>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-3 pt-2">
+            <a id="modalMaps" target="_blank" rel="noopener"
+               class="text-center px-4 py-2 rounded-xl bg-white text-slate-900 font-semibold hover:opacity-90 transition">
+              Open in Google Maps
+            </a>
+            <button id="modalNextPhoto"
+              class="px-4 py-2 rounded-xl glass border border-white/10 hover:border-white/20 transition">
+              Next photo →
+            </button>
+          </div>
+
+          <div class="text-xs text-slate-300/70">
+            Distances are approximate, computed from SLAF Koggala base coordinate. :contentReference[oaicite:1]{index=1}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./places.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
