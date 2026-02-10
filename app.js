@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const container = document.getElementById(containerId);
         let placeIndex = 0;
         places[location].forEach(place => {
-            const carouselId = `${location}-carousel-${placeIndex++}`;
+            const carouselId = `${location}-carousel-${placeIndex}`;
+            const collapseId = `${location}-collapse-${placeIndex++}`;
             const card = document.createElement('div');
             card.className = 'col-md-4 mb-4';
             let carouselHtml = `
@@ -29,20 +30,35 @@ document.addEventListener('DOMContentLoaded', () => {
                 `;
             }
             carouselHtml += `</div>`;
-            card.innerHTML = `
-                <div class="card">
-                    ${carouselHtml}
-                    <div class="card-body">
-                        <h5 class="card-title">${place.name}</h5>
-                        <p class="card-text">${place.description}</p>
-                        <p><strong>Distance from SLAF Koggala:</strong> ${place.distance}</p>
-                        <p><strong>Price:</strong> ${place.price}</p>
-                        <p><strong>Opening Hours:</strong> ${place.opening}</p>
-                        <p><strong>Contact:</strong> ${place.contact}</p>
-                        <a href="${place.mapUrl}" target="_blank" class="btn btn-primary">Google Maps</a>
+            if (location === 'menu') {
+                card.innerHTML = `
+                    <div class="card">
+                        <div class="card-header" data-bs-toggle="collapse" data-bs-target="#${collapseId}" aria-expanded="false" aria-controls="${collapseId}">
+                            <h5 class="card-title mb-0">${place.name}</h5>
+                        </div>
+                        <div id="${collapseId}" class="collapse">
+                            <div class="card-body p-0">
+                                ${carouselHtml}
+                            </div>
+                        </div>
                     </div>
-                </div>
-            `;
+                `;
+            } else {
+                card.innerHTML = `
+                    <div class="card">
+                        ${carouselHtml}
+                        <div class="card-body">
+                            <h5 class="card-title">${place.name}</h5>
+                            <p class="card-text">${place.description}</p>
+                            <p><strong>Distance from SLAF Koggala:</strong> ${place.distance}</p>
+                            <p><strong>Price:</strong> ${place.price}</p>
+                            <p><strong>Opening Hours:</strong> ${place.opening}</p>
+                            <p><strong>Contact:</strong> ${place.contact}</p>
+                            ${place.mapUrl ? `<a href="${place.mapUrl}" target="_blank" class="btn btn-primary">Google Maps</a>` : ''}
+                        </div>
+                    </div>
+                `;
+            }
             container.appendChild(card);
         });
     }
@@ -50,4 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
     renderPlaces('koggala', 'koggala-places');
     renderPlaces('galle', 'galle-places');
     renderPlaces('matara', 'matara-places');
+    renderPlaces('restaurants', 'restaurants-places');
+    renderPlaces('menu', 'menu-places');
 });

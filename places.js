@@ -16,7 +16,7 @@ const places = {
         },
         {
             name: "Koggala Lake (Lagoon) Boat Safari by AirForce Boat Service",
-            description: "A guided boat trip on Koggala Lake, visiting cinnamon island, temple, seeing wildlife like monkeys, birds, lizards.",
+            description: "A guided boat trip on Koggala Lake, visiting Madolduwa,cinnamon island, seeing wildlife like monkeys, birds, lizards.",
             photos: [
                 "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/6a/3b/a2/koggala-lake.jpg?w=1200&h=-1&s=1",
                 "https://d3prz3jkfh1dmo.cloudfront.net/sites/2/2025/09/koggala-boat-ride-1.jpg?w=1920&h=800&fit=crop&crop=center&auto=format,compress,enhance&q=50",
@@ -59,6 +59,62 @@ const places = {
             price: "LKR 500 - 1,000 (donation-based entry)",
             contact: "+94 77 961 5811",
             mapUrl: "https://www.google.com/maps/search/?api=1&query=Koggala+Sea+Turtle+Hatchery+Sri+Lanka"
+        },
+        {
+            name: "Thalpe Beach",
+            description: "Thalpe Beach is a serene stretch of golden sand with calm waters, ideal for swimming and relaxation.",
+            photos: [
+                "https://lh3.googleusercontent.com/gps-cs-s/AHVAweqQTDLKAuf8-3E5Hl9KOMzK7MmumSuqtZ5-ZE8JgE5VlCffdRCVIpnRLCkF_21zfTzazluqg3Ebe1FpWpuXdDAUPm8PWqjtTDw0RBY-A5Sk1tbBbYzgAfy7D45ZVVUkFAUcVute=w270-h312-n-k-no",
+                "https://lh3.googleusercontent.com/gps-cs-s/AHVAweqyoC5f-X89uDETEKpwpiKqFc02M3D6_hsxowQubdRm6632-G3gseCdue_fRKdWKF-OfwhJm-A_rYwWfPrgGiSMeP6ccpsyd2LFAzQPxkJ_SxPc2Y3oQjWraup4chHTHChb4EzU6Q=s680-w680-h510-rw",
+                "https://lh3.googleusercontent.com/gps-cs-s/AHVAweqJgp236oQOc8r7WvKpFjf-qN41OCVf1oZY8TyaAORy3HPsc5GQVzViogWbPEPA0_oyNohOQMBiZYTdrPuj7OIEhx2d0KIxbvph8XqvNQ3vAGbVrD-ZTuH-u2l3WrzU9yF8lgH3yQ=s680-w680-h510-rw"
+            ],
+            distance: "Approximately 5 km",
+            opening: "Open 24/7 (beach access)",
+            price: "Free",
+            contact: "N/A",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Thalpe+Beach+Sri+Lanka"
+        },
+        {
+            name: "Yatagala Raja Maha Viharaya",
+            description: "An ancient Buddhist temple known for its rock inscriptions and serene environment.",
+            photos: [
+                "https://lh3.googleusercontent.com/gps-cs-s/AHVAwer988kdgPlohmEukZ_7jhf4s15aHzb6FXMXISK9lrZNUWSkJBlnHcuKhijnrBQ4ixzHLcojaqS1auXBjfMfEYxOYJEaU8PUdDu-xUMLppdvWyHE_b0gz5xe4PyaojgXESBXgCoJ=s680-w680-h510-rw",
+                "https://lh3.googleusercontent.com/gps-cs-s/AHVAwepHiFgrVEqFgGdbHhnznOSRL1LuCJpFZRvOTWngmqFUHIljDIjgisOMS2h9z49kWQlPvrYvt97zxAMTFBoalTjQr5xrtq8BR54EmuDqNeU-bb1Em6u1CwBGcMXHD8rfG_XBhACm=s680-w680-h510-rw",
+                "https://lh3.googleusercontent.com/gps-cs-s/AHVAwep9y-VoMxURY-3LT1lUsI-lZv6mmnk5hKnCuPEchOMr3DVj4H8YpmxDrgxcCQKZBFlEj-xHJdLqkbokIxEeZQPm02rAyCkFDHt9TGFMY4f-iEy-bBtuqGyZvrUEHFbo71xS47zUWw=s680-w680-h510-rw"
+            ],
+            distance: "Approximately 10 km",
+            opening: "6:00 AM - 9:00 PM daily",
+            price: "Free (donations appreciated)",
+            contact: "N/A",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Yatagala+Raja+Maha+Viharaya+Sri+Lanka"
+        },
+        {
+            name: "Eagles Catalina Golf Course Koggala",
+            description: "A 9-hole golf course located within the SLAF Koggala station, offering challenging play amid scenic surroundings.",
+            photos: [
+                "https://scontent.fcmb3-3.fna.fbcdn.net/v/t39.30808-6/468115140_562238973180965_857117148283946055_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeHLh0gKL4Uxnt9dFSraj1nBQ6OhDWMHDw9Do6ENYwcPD69ALkH1Zfxv3DQ3__n-egeEGCdZDGiFIwNgX7miLu1n&_nc_ohc=540Ruc_GIMIQ7kNvwGE42mh&_nc_oc=Adn6M6vbW1Oowuam3y4jVl_lSk3W0H3Nl9ILD_cCxayHcgxAn5Pj9yuXj-JcZ0fm8xo0huwJ-ksqBZ6spg-convX&_nc_zt=23&_nc_ht=scontent.fcmb3-3.fna&_nc_gid=FlpSX2-Mo4xYEknCamYx8A&oh=00_Afso2vlLVQjiBnaaYgUMJUJMtmBwAbPspIw006ad9tr-Pg&oe=69914136",
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/5e/e1/b3/caption.jpg?w=700&h=400&s=1",
+                "https://www.trilanka.com/wp-content/uploads/2024/10/Golf-beside-airstrip2-1500x900-1.jpg"
+            ],
+            distance: "Approximately 0 km (on-site)",
+            opening: "6:00 AM - 6:00 PM daily",
+            price: "LKR 2,000 for visitors (green fee)",
+            contact: "+94 77 222 9362",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Eagles+Catalina+Golf+Course+Koggala+Sri+Lanka"
+        },
+        {
+            name: "Surfing in Ahangama",
+            description: "Ahangama offers various surf spots like Sticks and Lazy Left/Right, suitable for beginners and intermediates.",
+            photos: [
+                "https://lapoint.b-cdn.net/image/6JWaEl0DHhbrbuvCrT6AE9/5b6f0f4bc680e960ebb5abde67566280/Ahangama-surf-spots-for-beginners-to-advanced-surfers.jpg?fm=jpg&fl=progressive&w=1920&q=75",
+                "https://insightresortsrilanka.com/wp-content/uploads/2015/10/getting-ready-to-surf.webp",
+                "https://insightresortsrilanka.com/wp-content/uploads/2015/10/two-surfers-ride-the-waves-1.webp"
+            ],
+            distance: "Approximately 3 km",
+            opening: "Open 24/7, best in morning (season Oct-May)",
+            price: "Board rental LKR 1,000/hour",
+            contact: "N/A (various schools)",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Ahangama+Surf+Spots+Sri+Lanka"
         }
     ],
     galle: [
@@ -153,6 +209,62 @@ const places = {
             price: "LKR 1,000 for locals, LKR 2,500 for foreigners (plus guide fee)",
             contact: "+94 45 225 7357",
             mapUrl: "https://www.google.com/maps/search/?api=1&query=Sinharaja+Forest+Reserve+Sri+Lanka"
+        },
+        {
+            name: "Hikkaduwa Coral Sanctuary",
+            description: "A marine sanctuary famous for its coral reefs and snorkeling opportunities, home to colorful fish and turtles.",
+            photos: [
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/38/4e/54/94779854274.jpg?w=800&h=500&s=1",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx1bY4Jc9rEOrp-rdHmebEXQ12XawAV6ycB0beCH3x&s",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2vXlDZHjSMfiDU3RVvhoKtBxbaBCbS-O86oXTUPzk&s"
+            ],
+            distance: "Approximately 30 km",
+            opening: "7:00 AM - 5:00 PM daily",
+            price: "Boat tour LKR 2,000 per person",
+            contact: "N/A",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Hikkaduwa+Coral+Sanctuary+Sri+Lanka"
+        },
+        {
+            name: "Diving in Galle",
+            description: "Explore underwater wrecks and reefs with excellent visibility, suitable for all levels.",
+            photos: [
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1OmQlQjzC11fQ0uWF4d9BOecrd73ayd4-7w&s",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmh9VVwV7PiIReJIBSzGacUCmHAzAfI1CjbXc8aGIH&s",
+                "https://admin.myceylonadventures.com/uploads/Snorkeling_and_Scuba_diving_in_Galle_3_fc05808bcc.jpg"
+            ],
+            distance: "Approximately 12 km",
+            opening: "8:00 AM - 6:00 PM (dive centers)",
+            price: "$50 per dive",
+            contact: "+94 75 865 7380 (Sun Diving Center)",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Diving+in+Galle+Sri+Lanka"
+        },
+        {
+            name: "Hiyare Rainforest Reservoir",
+            description: "A biodiversity hotspot with walking trails, birdwatching, and a serene reservoir in the rainforest.",
+            photos: [
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK8ifhlu0-I8GGPLNVhInWlqzUok7eqzCZ0Q&s",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi12tNFK4P9GrIhMm5j3uhNlIa1Uownx3rnLAJLVABbw&s",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy6Yq4OHMoo3qTALrLm44jU9-DQZrUJGraeQWpTqH7&s"
+            ],
+            distance: "Approximately 20 km",
+            opening: "8:00 AM - 5:00 PM daily",
+            price: "LKR 500 entry",
+            contact: "N/A",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Hiyare+Rainforest+Reservoir+Sri+Lanka"
+        },
+        {
+            name: "Fatna Sliding Water Fall ,Deniyaya",
+            description: "A natural water slide formed by rocks, offering adventurous sliding into pools amid scenic surroundings.",
+            photos: [
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBxIAUaUp-mXF3qEMT_2Q57PzLFkurwrSJoA&s",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-CEoU1kZKqyfrYJ9r-vsppwVwh43aYg97wi7Te0W3CQ&s",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM_aUUvs1nBR6bDCtFOgtbOj2jXlu_uj9tpA&s"
+            ],
+            distance: "Approximately 40 km",
+            opening: "Open 24/7",
+            price: "Free",
+            contact: "N/A",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Patna+Sliding+Water+Fall+Deniyaya+Sri+Lanka"
         }
     ],
     matara: [
@@ -264,6 +376,105 @@ const places = {
             price: "LKR 150 for locals, LKR 500 for foreigners",
             contact: "+94 41 222 2411",
             mapUrl: "https://www.google.com/maps/search/?api=1&query=Star+Fort+Matara+Sri+Lanka"
+        }
+    ],
+    restaurants: [
+        {
+            name: "Catalina Grill Restaurant",
+            description: "A beachside restaurant offering fresh seafood and international cuisine with oceanic views.",
+            photos: [
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/af/a2/6a/caption.jpg?w=900&h=500&s=1",
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/0c/15/b8/catalina-grill.jpg?w=900&h=500&s=1",
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/8b/cb/0e/caption.jpg?w=1200&h=1200&s=1"
+            ],
+            distance: "Approximately 0.5 km",
+            opening: "11:00 AM - 11:00 PM daily",
+            price: "LKR 2,000 - 3,000 average meal",
+            contact: "+94 91 228 3228",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Catalina+Grill+Restaurant+Koggala+Sri+Lanka"
+        },
+        {
+            name: "Moments",
+            description: "A cozy restaurant offering a mix of local and international dishes in a relaxed atmosphere.",
+            photos: [
+                "https://cf.bstatic.com/xdata/images/hotel/max1024x768/534076574.jpg?k=ac78381c15ed29d6788ea8809bdcb8015e1a01c647961d325a31e7031e8db30f&o=",
+                "https://lh3.googleusercontent.com/p/AF1QipOZEZbfsZPChxV9FEvyyrK9Bqh1GCsB4QobGtUi=s680-w680-h510-rw",
+                "https://lh3.googleusercontent.com/gps-cs-s/AHVAwer-VmyObBvHpcs9WpKDUXqI2z9g3xGX0StHkoTGnaWpv7d7YoVSdcjwhYcTwNqOMDRZOu6of1oi_ebSin41OFQIh7JguMll1x60x0Us4BX3AS6TvIdhtMdZq9-H04M5omSBZgKK=s680-w680-h510-rw"
+            ],
+            distance: "Approximately 8 km",
+            opening: "10:00 AM - 10:00 PM daily",
+            price: "LKR 1,500 - 2,500 average meal",
+            contact: "+94 91 223 4567",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Moments+Restaurant+Galle+Sri+Lanka"
+        },
+        {
+            name: "COCO Kitchen Ahangama",
+            description: "Wooden beachside restaurant serving fresh seafood, world flavors, cocktails, and wine.",
+            photos: [
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/ef/12/25/coco-kitchen.jpg?w=900&h=500&s=1",
+                "https://www.wander-lust.nl/wp-content/uploads/2025/04/best-restaurants-cafes-bars-in-Ahangama.jpg",
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/30/82/d8/f9/beach-bar.jpg"
+            ],
+            distance: "Approximately 3 km",
+            opening: "12:00 PM - 11:00 PM daily",
+            price: "LKR 2,000 - 3,000 average meal",
+            contact: "N/A",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=COCO+Kitchen+Ahangama+Sri+Lanka"
+        },
+        {
+            name: "The Archives Galle Fort - Restaurant & Cocktail Bar",
+            description: "A stylish restaurant and bar in Galle Fort offering delicious seafood, curries, and cocktails.",
+            photos: [
+                "https://the-archives-fort-restaurant-cocktail-bar.gallehotelspage.com/data/Pics/OriginalPhoto/16433/1643381/1643381048/the-archives-galle-fort-hotel-restaurant-cocktail-bar-galle-pic-4.JPEG",
+                "https://the-archives-fort-restaurant-cocktail-bar.gallehotelspage.com/data/Pics/OriginalPhoto/16433/1643381/1643381031/the-archives-galle-fort-hotel-restaurant-cocktail-bar-galle-pic-3.JPEG",
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/92/57/17/caption.jpg?w=900&h=500&s=1"
+            ],
+            distance: "Approximately 12 km",
+            opening: "7:00 AM - 11:00 PM daily",
+            price: "LKR 3,000 - 4,000 average meal",
+            contact: "+94 91 223 4000",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=The+Archives+Galle+Fort+Restaurant+Sri+Lanka"
+        },
+        {
+            name: "Luuma Beach",
+            description: "A beach club and restaurant offering Mediterranean-inspired dishes with stunning ocean views.",
+            photos: [
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/b9/60/86/luuma-beach-restaurant.jpg?w=900&h=500&s=1",
+                "https://cdn.corner.inc/place-photo/AdDdOWpEQUsxVjN6SxaCUwwDxlGy8S8ieMdMQc2UUHZBr2dOuVSM5W-7Gxx-1uty6VCxD8t6THcgNp1f16lX4UKMlpbPj4tr5rNytZY83zVmeyoZxdhfXQPtUMGxkCNM2v2YT41_haQPY10O8t0Ggj-z7gLSIksXLswx4cxRI4vnLEZnJ9Xd.jpeg",
+                "https://cdn.corner.inc/place-photo/AdDdOWrJC1YKayITIh7fG5iGqgerAchk4BUy8GgmM_qKp3WQuholS-pPd3_JmZ8jDveSIbDSYLuD36cgskxa0uJnDb4_BSxpmaHWiTr9h6dbpB-ZohGw0tZIXNKINx1PCWSHpKDv1Jop6k-F3FadGzkeVLe-brVkjn9LnzLxufoTMoXjyudV.jpeg",
+                "https://media.alotea.com/amare-beach-marbella-cover-1.webp"
+            ],
+            distance: "Approximately 2 km",
+            opening: "9:00 AM - 10:00 PM daily",
+            price: "LKR 2,500 - 3,500 average meal",
+            contact: "+94 91 228 3939",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Luuma+Beach+Sri+Lanka"
+        }
+    ],
+    menu: [
+        {
+            name: "Officers' Transit Rooms",
+            description: "Menu card for Officers' Transit Rooms",
+            photos: [
+                "https://i.etsystatic.com/7195986/r/il/a567b8/6683237352/il_1080xN.6683237352_ko69.jpg"
+            ],
+            distance: "N/A",
+            opening: "N/A",
+            price: "N/A",
+            contact: "N/A",
+            mapUrl: ""
+        },
+        {
+            name: "Sea Front Chalets",
+            description: "Menu card for Sea Front Chalets",
+            photos: [
+                "https://www.bogmallobeachresort.com/wp-content/uploads/2024/06/F8A4331.webp"
+            ],
+            distance: "N/A",
+            opening: "N/A",
+            price: "N/A",
+            contact: "N/A",
+            mapUrl: ""
         }
     ]
 };
